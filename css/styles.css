@@ -50,8 +50,27 @@ body {
 }
 
 #contract-address {
-    color: #FFED20;  /* Text color */
-    font-size: 20px;  /* Font size */
+    color: #FFED20;  /* Yellow text color */
+    font-size: 20px;  /* Default font size for large devices */
     text-shadow: 1px 1px 2px black;  /* Text shadow for better visibility */
-    font-family: 'starjedi', 'Arial', sans-serif;  /* Font family */
+    font-family: 'starjedi', 'Arial', sans-serif;  /* Custom 'starjedi' font, fallback to Arial */
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 992px) { /* For medium devices (tablets) */
+    #contract-address {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) { /* For small devices (landscape phones) */
+    #contract-address {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) { /* For extra small devices (portrait phones) */
+    #contract-address {
+        font-size: 12px;
+    }
 }
